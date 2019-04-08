@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Motion Layout Playground</string>
+    <string name="android_version">Android Version</string>
 </resources>
