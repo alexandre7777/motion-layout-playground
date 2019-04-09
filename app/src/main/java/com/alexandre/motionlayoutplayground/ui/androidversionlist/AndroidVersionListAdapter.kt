@@ -3,10 +3,11 @@ package com.alexandre.motionlayoutplayground.ui.androidversionlist
 import android.support.v7.recyclerview.extensions.ListAdapter
 import android.support.v7.util.DiffUtil
 import android.support.v7.widget.RecyclerView
+import android.view.View
 import android.view.ViewGroup
 import com.alexandre.motionlayoutplayground.domain.model.AndroidVersionItem
 
-class AndroidVersionListAdapter() : ListAdapter<AndroidVersionItem, RecyclerView.ViewHolder>(ANDROID_VERSION_ITEM_COMPARATOR) {
+class AndroidVersionListAdapter(private val onClickAndroidVersionItem: (View?, AndroidVersionItem) -> Unit) : ListAdapter<AndroidVersionItem, RecyclerView.ViewHolder>(ANDROID_VERSION_ITEM_COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return AndroidVersionViewHolder.create(parent)
@@ -15,7 +16,7 @@ class AndroidVersionListAdapter() : ListAdapter<AndroidVersionItem, RecyclerView
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val item = getItem(position)
         if (item != null) {
-            (holder as AndroidVersionViewHolder).bind(item)
+            (holder as AndroidVersionViewHolder).bind(item, onClickAndroidVersionItem)
         }
     }
 

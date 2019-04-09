@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Motion Layout Playground</string>
     <string name="android_version">Android Version</string>
+    <string name="android_donut">android donut</string>
+    <string name="android_eclair">android eclair</string>
+    <string name="android_froyo">android froyo</string>
+    <string name="android_gingerbread">android gingerbread</string>
+    <string name="android_honeycomb">android honeycomb</string>
+    <string name="android_icecreamsandwich">android ice cream sandwich</string>
+    <string name="android_jellybean">android jelly bean</string>
+    <string name="android_kitkat">android KitKat</string>
+    <string name="android_lollipop">android lollipop</string>
+    <string name="android_marshmallow">android marshmallow</string>
 </resources>

@@ -13,9 +13,12 @@ class AndroidVersionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val versionTitle: TextView = view.findViewById(R.id.versionTitle)
     private val versionImage: ImageView = view.findViewById(R.id.versionImage)
 
-    fun bind(androidVersionItem: AndroidVersionItem) {
+    fun bind(androidVersionItem: AndroidVersionItem, onClickAndroidVersionItem: (View?, AndroidVersionItem) -> Unit) {
         versionTitle.text = androidVersionItem.title
         versionImage.setImageResource(androidVersionItem.image)
+        itemView.setOnClickListener {
+            onClickAndroidVersionItem(it, androidVersionItem)
+        }
     }
 
     companion object {
