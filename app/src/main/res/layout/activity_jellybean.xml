@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.androidversionlist.AndroidVersionListActivity"
+    app:layoutDescription="@xml/scene_jellybean"
+    tools:showPaths="true">
+
+    <android.support.constraint.utils.ImageFilterView
+        android:id="@+id/android_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/jelly_bean"
+        app:altSrc="@drawable/kitkat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/android_jellybean"/>
+
+</android.support.constraint.motion.MotionLayout>
