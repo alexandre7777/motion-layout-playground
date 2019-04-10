@@ -6,4 +6,15 @@
 
     <color name="green">#61d800</color>
     <color name="brown">#795548</color>
+
+    <color name="donut">#52ae53</color>
+    <color name="eclair">#fc961f</color>
+    <color name="froyo">#9a2dae</color>
+    <color name="gingerbread">#f03f3b</color>
+    <color name="honeycomb">#fdbf27</color>
+    <color name="icecreamsandwich">#35adf0</color>
+    <color name="jellybean">#8dc250</color>
+    <color name="kitkat">#ec3b3f</color>
+    <color name="lollipop">#25abf2</color>
+    <color name="marshmallow">#1b9688</color>
 </resources>
