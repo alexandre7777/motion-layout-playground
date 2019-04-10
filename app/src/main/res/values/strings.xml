@@ -1,16 +1,19 @@
 <resources>
     <string name="app_name">Motion Layout Playground</string>
     <string name="android_version">Android Version</string>
-    <string name="android_donut">android donut</string>
-    <string name="android_eclair">android eclair</string>
-    <string name="android_froyo">android froyo</string>
-    <string name="android_gingerbread">android gingerbread</string>
-    <string name="android_honeycomb">android honeycomb</string>
-    <string name="android_icecreamsandwich">android ice cream sandwich</string>
-    <string name="android_jellybean">android jelly bean</string>
-    <string name="android_kitkat">android KitKat</string>
-    <string name="android_lollipop">android lollipop</string>
-    <string name="android_marshmallow">android marshmallow</string>
+    <string name="android_donut">Donut</string>
+    <string name="android_eclair">Eclair</string>
+    <string name="android_froyo">Froyo</string>
+    <string name="android_gingerbread">Gingerbread</string>
+    <string name="android_honeycomb">Honeycomb</string>
+    <string name="android_icecreamsandwich">Ice Cream Sandwich</string>
+    <string name="android_jellybean">Jelly Bean</string>
+    <string name="android_kitkat">KitKat</string>
+    <string name="android_lollipop">Lollipop</string>
+    <string name="android_marshmallow">Marshmallow</string>
+    <string name="android_nougat">Nougat</string>
+    <string name="android_oreo">Oreo</string>
+    <string name="android_pie">Pie</string>
 
     <string name="large_text">
         "Material is the metaphor.\n\n"
