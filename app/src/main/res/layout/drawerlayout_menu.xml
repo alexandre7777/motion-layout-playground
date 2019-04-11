@@ -12,241 +12,442 @@
 
     <TextView
         android:id="@+id/textViewDonut"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="@string/android_donut"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDonut"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageViewDonut"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_donut"
+        android:src="@drawable/donut"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDonut"
+        app:layout_constraintEnd_toStartOf="@+id/viewDonut"
+        app:layout_constraintTop_toTopOf="@+id/textViewDonut" />
+
+    <View
+        android:id="@+id/viewDonut"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDonut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDonut" />
+
     <TextView
         android:id="@+id/textViewEclair"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_eclair"
-        android:textColor="#FFF"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDonut"
-        tools:layout_editor_absoluteX="73dp" />
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewEclair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDonut" />
+
+    <ImageView
+        android:id="@+id/imageViewEclair"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_eclair"
+        android:src="@drawable/eclair"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEclair"
+        app:layout_constraintEnd_toStartOf="@+id/viewEclair"
+        app:layout_constraintTop_toTopOf="@+id/textViewEclair" />
+
+    <View
+        android:id="@+id/viewEclair"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewEclair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewEclair" />
 
     <TextView
         android:id="@+id/textViewFroyo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_froyo"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFroyo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewEclair" />
 
+    <ImageView
+        android:id="@+id/imageViewFroyo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_froyo"
+        android:src="@drawable/froyo"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFroyo"
+        app:layout_constraintEnd_toStartOf="@+id/viewFroyo"
+        app:layout_constraintTop_toTopOf="@+id/textViewFroyo" />
+
+    <View
+        android:id="@+id/viewFroyo"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/froyo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFroyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFroyo" />
+
     <TextView
         android:id="@+id/textViewGingerbread"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_gingerbread"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewGingerbread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewFroyo" />
 
+    <ImageView
+        android:id="@+id/imageViewGingerbread"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_gingerbread"
+        android:src="@drawable/gingerbread"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGingerbread"
+        app:layout_constraintEnd_toStartOf="@+id/viewGingerbread"
+        app:layout_constraintTop_toTopOf="@+id/textViewGingerbread" />
+
+    <View
+        android:id="@+id/viewGingerbread"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/gingerbread"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewGingerbread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewGingerbread" />
+
     <TextView
         android:id="@+id/textViewHoneycomb"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_honeycomb"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHoneycomb"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewGingerbread" />
 
+    <ImageView
+        android:id="@+id/imageViewHoneycomb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_honeycomb"
+        android:src="@drawable/honeycomb"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHoneycomb"
+        app:layout_constraintEnd_toStartOf="@+id/viewHoneycomb"
+        app:layout_constraintTop_toTopOf="@+id/textViewHoneycomb" />
+
+    <View
+        android:id="@+id/viewHoneycomb"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/honeycomb"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewHoneycomb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewHoneycomb" />
+
     <TextView
         android:id="@+id/textViewIcecreamsandwich"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_icecreamsandwich"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewIcecreamsandwich"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewHoneycomb" />
 
+    <ImageView
+        android:id="@+id/imageViewIcecreamsandwich"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_icecreamsandwich"
+        android:src="@drawable/ice_cream_sandwich"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIcecreamsandwich"
+        app:layout_constraintEnd_toStartOf="@+id/viewIcecreamsandwich"
+        app:layout_constraintTop_toTopOf="@+id/textViewIcecreamsandwich" />
+
+    <View
+        android:id="@+id/viewIcecreamsandwich"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/icecreamsandwich"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewIcecreamsandwich"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewIcecreamsandwich" />
+
     <TextView
         android:id="@+id/textViewJellybean"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_jellybean"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewJellybean"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewIcecreamsandwich" />
 
+    <ImageView
+        android:id="@+id/imageViewJellybean"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_jellybean"
+        android:src="@drawable/jelly_bean"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewJellybean"
+        app:layout_constraintEnd_toStartOf="@+id/viewJellybean"
+        app:layout_constraintTop_toTopOf="@+id/textViewJellybean" />
+
+    <View
+        android:id="@+id/viewJellybean"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/jellybean"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewJellybean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewJellybean" />
+
     <TextView
         android:id="@+id/textViewKitkat"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_kitkat"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKitkat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewJellybean" />
 
+    <ImageView
+        android:id="@+id/imageViewKitkat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_kitkat"
+        android:src="@drawable/kitkat"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewKitkat"
+        app:layout_constraintEnd_toStartOf="@+id/viewKitkat"
+        app:layout_constraintTop_toTopOf="@+id/textViewKitkat" />
+
+    <View
+        android:id="@+id/viewKitkat"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/kitkat"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewKitkat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewKitkat" />
+
     <TextView
         android:id="@+id/textViewLollipop"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_lollipop"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewLollipop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewKitkat" />
 
+    <ImageView
+        android:id="@+id/imageViewLollipop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/android_lollipop"
+        android:src="@drawable/lollipop"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLollipop"
+        app:layout_constraintEnd_toStartOf="@+id/viewLollipop"
+        app:layout_constraintTop_toTopOf="@+id/textViewLollipop" />
+
+    <View
+        android:id="@+id/viewLollipop"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/lollipop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLollipop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLollipop" />
+
     <TextView
         android:id="@+id/textViewMarshmallow"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/android_marshmallow"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewMarshmallow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLollipop" />
 
     <ImageView
-        android:id="@+id/img_donut"
+        android:id="@+id/imageViewMarshmallow"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_donut"
-        android:src="@drawable/donut"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_eclair"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_eclair"
-        android:src="@drawable/eclair"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_froyo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_froyo"
-        android:src="@drawable/froyo"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_gingerbread"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_gingerbread"
-        android:src="@drawable/gingerbread"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_honeycomb"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_honeycomb"
-        android:src="@drawable/honeycomb"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_icecreamsandwich"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_icecreamsandwich"
-        android:src="@drawable/ice_cream_sandwich"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_jellybean"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_jellybean"
-        android:src="@drawable/jelly_bean"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_kitkat"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_kitkat"
-        android:src="@drawable/kitkat"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_lollipop"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/android_lollipop"
-        android:src="@drawable/lollipop"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_marshmallow"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:contentDescription="@string/android_marshmallow"
         android:src="@drawable/marshmallow"
-        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMarshmallow"
+        app:layout_constraintEnd_toStartOf="@+id/viewMarshmallow"
+        app:layout_constraintTop_toTopOf="@+id/textViewMarshmallow" />
+
+    <View
+        android:id="@+id/viewMarshmallow"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/marshmallow"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewMarshmallow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageViewMarshmallow" />
+
+    <TextView
+        android:id="@+id/textViewNougat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/android_nougat"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNougat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMarshmallow" />
+
+    <ImageView
+        android:id="@+id/imageViewNougat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/android_nougat"
+        android:src="@drawable/nougat"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNougat"
+        app:layout_constraintEnd_toStartOf="@+id/viewNougat"
+        app:layout_constraintTop_toTopOf="@id/textViewNougat" />
+
+    <View
+        android:id="@+id/viewNougat"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/honeycomb"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNougat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNougat" />
+
+    <TextView
+        android:id="@+id/textViewOreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/android_oreo"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNougat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNougat" />
+
+    <ImageView
+        android:id="@+id/imageViewOreo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/android_nougat"
+        android:src="@drawable/oreo"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOreo"
+        app:layout_constraintEnd_toStartOf="@+id/viewOreo"
+        app:layout_constraintTop_toTopOf="@id/textViewOreo" />
+
+    <View
+        android:id="@+id/viewOreo"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewOreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewOreo" />
+
+    <TextView
+        android:id="@+id/textViewPie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/android_pie"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOreo" />
+
+    <ImageView
+        android:id="@+id/imageViewPie"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/android_nougat"
+        android:src="@drawable/pie"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPie"
+        app:layout_constraintEnd_toStartOf="@+id/viewPie"
+        app:layout_constraintTop_toTopOf="@id/textViewPie" />
+
+    <View
+        android:id="@+id/viewPie"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/kitkat"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPie" />
 
 </com.alexandre.motionlayoutplayground.ui.motionutils.DrawerContent>
