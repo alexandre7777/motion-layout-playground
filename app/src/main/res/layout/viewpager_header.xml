@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alexandre.motionlayoutplayground.ui.motionutils.ViewpagerHeader
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/motionLayout"
+        app:layoutDescription="@xml/scene_nougat"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+    <View
+            android:id="@+id/backgroundView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+            android:id="@+id/droid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nougat"/>
+
+</com.alexandre.motionlayoutplayground.ui.motionutils.ViewpagerHeader>
