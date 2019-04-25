@@ -16,19 +16,19 @@
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0.1"
                 motion:framePosition="25"
-                motion:target="@+id/android_img"
+                motion:motionTarget="@+id/android_img"
                 motion:pathMotionArc="startVertical"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0.5"
                 motion:framePosition="50"
-                motion:target="@+id/android_img"
+                motion:motionTarget="@+id/android_img"
                 motion:pathMotionArc="startHorizontal"/>
             <KeyPosition
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0.1"
                 motion:framePosition="75"
-                motion:target="@+id/android_img"
+                motion:motionTarget="@+id/android_img"
                 motion:pathMotionArc="startVertical"/>
         </KeyFrameSet>
     </Transition>

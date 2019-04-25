@@ -15,7 +15,7 @@
             <KeyAttribute
                 android:rotation="-45"
                 motion:framePosition="50"
-                motion:target="@id/android_img"/>
+                motion:motionTarget="@id/android_img"/>
         </KeyFrameSet>
     </Transition>
 

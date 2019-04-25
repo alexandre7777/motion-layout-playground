@@ -1,9 +1,9 @@
 package com.alexandre.motionlayoutplayground.ui.androidversionlist
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.alexandre.motionlayoutplayground.R
 import com.alexandre.motionlayoutplayground.domain.model.AndroidVersionItem
 import com.alexandre.motionlayoutplayground.domain.model.createAndroidVersionList

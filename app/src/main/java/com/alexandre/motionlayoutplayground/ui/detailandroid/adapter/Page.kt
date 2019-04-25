@@ -1,10 +1,10 @@
 package com.alexandre.motionlayoutplayground.ui.detailandroid.adapter
 
-import android.support.v4.app.Fragment
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
+import androidx.fragment.app.Fragment
 
 class Page  : Fragment() {
 

@@ -17,10 +17,10 @@
                     motion:keyPositionType="parentRelative"
                     motion:percentY="0.5"
                     motion:framePosition="50"
-                    motion:target="@+id/droid">
+                    motion:motionTarget="@+id/droid">
                 <KeyAttribute
                         motion:framePosition="50"
-                        motion:target="@id/backgroundView">
+                        motion:motionTarget="@id/backgroundView">
                     <CustomAttribute
                             motion:attributeName="backgroundColor"
                             motion:customColorValue="@color/green"/>

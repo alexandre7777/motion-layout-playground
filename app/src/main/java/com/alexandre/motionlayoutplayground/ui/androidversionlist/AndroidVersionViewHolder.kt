@@ -1,11 +1,11 @@
 package com.alexandre.motionlayoutplayground.ui.androidversionlist
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.alexandre.motionlayoutplayground.R
 import com.alexandre.motionlayoutplayground.domain.model.AndroidVersionItem
 

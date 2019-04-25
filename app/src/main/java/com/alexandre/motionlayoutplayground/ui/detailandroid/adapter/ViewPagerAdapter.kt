@@ -1,9 +1,9 @@
 package com.alexandre.motionlayoutplayground.ui.detailandroid.adapter
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 
 class ViewPagerAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
 
