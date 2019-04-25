@@ -16,7 +16,7 @@
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0.25"
                 motion:framePosition="50"
-                motion:target="@+id/android_img"/>
+                motion:motionTarget="@+id/android_img"/>
         </KeyFrameSet>
     </Transition>
 

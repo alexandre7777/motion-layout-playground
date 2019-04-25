@@ -1,9 +1,9 @@
 package com.alexandre.motionlayoutplayground.ui.detailandroid
 
 import android.os.Bundle
-import android.support.constraint.motion.MotionLayout
-import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.viewpager.widget.ViewPager
 import com.alexandre.motionlayoutplayground.R
 import com.alexandre.motionlayoutplayground.ui.detailandroid.adapter.ViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_nougat.*

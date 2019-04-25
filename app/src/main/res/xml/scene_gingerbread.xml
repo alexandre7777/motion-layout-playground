@@ -16,7 +16,7 @@
                 android:scaleX="2"
                 android:scaleY="2"
                 motion:framePosition="50"
-                motion:target="@id/android_img"/>
+                motion:motionTarget="@id/android_img"/>
         </KeyFrameSet>
     </Transition>
 
