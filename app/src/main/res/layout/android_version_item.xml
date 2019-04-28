@@ -15,7 +15,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@tools:sample/avatars"
-            android:scaleType="centerCrop"/>
+            android:scaleType="fitCenter"/>
 
     <TextView
             android:id="@+id/versionTitle"

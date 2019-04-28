@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.androidversionlist.AndroidVersionListActivity"
     app:layoutDescription="@xml/scene_jellybean"
-    tools:showPaths="true">
+    app:showPaths="true">
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/android_img"
