@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.androidversionlist.AndroidVersionListActivity"
     app:layoutDescription="@xml/scene_icecreamsandwich"
-    tools:showPaths="true">
+    app:showPaths="true">
 
     <ImageView
         android:id="@+id/android_img"
