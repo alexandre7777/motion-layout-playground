@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.constraintlayout.motion.widget.MotionScene
 import androidx.viewpager.widget.ViewPager
 import com.alexandre.motionlayoutplayground.R
 import com.alexandre.motionlayoutplayground.ui.detailandroid.adapter.ViewPagerAdapter
@@ -37,6 +38,10 @@ class DetailAndroidActivity : AppCompatActivity() {
 
                 motion.setTransitionListener(
                     object : MotionLayout.TransitionListener {
+                        override fun allowsTransition(transition: MotionScene.Transition?): Boolean {
+                            return true
+                        }
+
                         override fun onTransitionStarted(motionLayout: MotionLayout?, startId: Int, endId: Int) {
                             Toast.makeText(baseContext, "Start", Toast.LENGTH_SHORT).show()
                         }
