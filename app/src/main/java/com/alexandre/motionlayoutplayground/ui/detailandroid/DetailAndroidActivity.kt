@@ -38,9 +38,6 @@ class DetailAndroidActivity : AppCompatActivity() {
 
                 motion.setTransitionListener(
                     object : MotionLayout.TransitionListener {
-                        override fun allowsTransition(transition: MotionScene.Transition?): Boolean {
-                            return true
-                        }
 
                         override fun onTransitionStarted(motionLayout: MotionLayout?, startId: Int, endId: Int) {
                             Toast.makeText(baseContext, "Start", Toast.LENGTH_SHORT).show()
