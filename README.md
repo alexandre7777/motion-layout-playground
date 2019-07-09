@@ -1,6 +1,8 @@
 # motion-layout-playground
 Android project to play with Motion Layout.
 
+[Medium article that describe first examples.](https://medium.com/xebia-france/move-my-app-with-motionlayout-part-1-7800637feb22)
+
 Each step will introduce a new topic about motion layout :
 
 Basic with a change on a constraint
