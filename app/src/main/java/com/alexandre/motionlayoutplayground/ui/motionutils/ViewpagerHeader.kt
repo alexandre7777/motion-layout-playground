@@ -6,7 +6,7 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.viewpager.widget.ViewPager
 
 class ViewpagerHeader @JvmOverloads constructor(
-        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : MotionLayout(context, attrs, defStyleAttr), ViewPager.OnPageChangeListener {
 
     override fun onPageScrollStateChanged(state: Int) {

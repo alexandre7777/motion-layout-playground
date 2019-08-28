@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetStart="@id/start"
-        motion:constraintSetEnd="@id/end"
-        motion:duration="1000">
+            motion:constraintSetStart="@id/start"
+            motion:constraintSetEnd="@id/end"
+            motion:duration="1000">
 
         <KeyFrameSet>
             <KeyPosition
@@ -27,15 +27,15 @@
     </Transition>
 
     <ConstraintSet
-        android:id="@+id/start">
+            android:id="@+id/start">
         <Constraint
-            android:id="@+id/droid"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="24dp"
-            motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent">
+                android:id="@+id/droid"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="24dp"
+                motion:layout_constraintLeft_toLeftOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent">
         </Constraint>
         <Constraint
                 android:id="@+id/backgroundView">
@@ -46,13 +46,13 @@
     </ConstraintSet>
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/droid"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="24dp"
-            motion:layout_constraintRight_toRightOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent">
+                android:id="@id/droid"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="24dp"
+                motion:layout_constraintRight_toRightOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent">
         </Constraint>
         <Constraint
                 android:id="@+id/backgroundView">
