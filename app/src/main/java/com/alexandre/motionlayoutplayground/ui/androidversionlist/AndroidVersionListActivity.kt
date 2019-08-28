@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_android_version_list.*
 
 class AndroidVersionListActivity : AppCompatActivity() {
 
-    private var adapter = AndroidVersionListAdapter { _, androidVersionItem : AndroidVersionItem ->
+    private var adapter = AndroidVersionListAdapter { _, androidVersionItem: AndroidVersionItem ->
         val intent = Intent(this, DetailAndroidActivity::class.java)
         intent.putExtra(KEY_RES_ID, androidVersionItem.res)
         startActivity(intent)
@@ -25,7 +25,7 @@ class AndroidVersionListActivity : AppCompatActivity() {
         initAdapter()
     }
 
-    private fun initAdapter(){
+    private fun initAdapter() {
         list.layoutManager = LinearLayoutManager(applicationContext)
         list.adapter = adapter
 

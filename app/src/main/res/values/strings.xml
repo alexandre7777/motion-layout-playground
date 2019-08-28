@@ -105,4 +105,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="droid">droid</string>
+    <string name="page">Page</string>
 </resources>

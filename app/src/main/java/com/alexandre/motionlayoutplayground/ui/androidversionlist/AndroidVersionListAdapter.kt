@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.alexandre.motionlayoutplayground.domain.model.AndroidVersionItem
 
-class AndroidVersionListAdapter(private val onClickAndroidVersionItem: (View?, AndroidVersionItem) -> Unit) : ListAdapter<AndroidVersionItem, RecyclerView.ViewHolder>(ANDROID_VERSION_ITEM_COMPARATOR) {
+class AndroidVersionListAdapter(private val onClickAndroidVersionItem: (View?, AndroidVersionItem) -> Unit) :
+    ListAdapter<AndroidVersionItem, RecyclerView.ViewHolder>(ANDROID_VERSION_ITEM_COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return AndroidVersionViewHolder.create(parent)

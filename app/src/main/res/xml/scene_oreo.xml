@@ -3,960 +3,960 @@
              xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@+id/end"
-        motion:constraintSetStart="@+id/start"
-        motion:duration="250" />
+            motion:constraintSetEnd="@+id/end"
+            motion:constraintSetStart="@+id/start"
+            motion:duration="250"/>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:id="@+id/textViewDonut"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewDonut"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
+                android:id="@+id/textViewDonut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewDonut"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewDonut"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewDonut"
-            motion:layout_constraintEnd_toStartOf="@+id/viewDonut"
-            motion:layout_constraintTop_toTopOf="@+id/textViewDonut"/>
+                android:id="@+id/imageViewDonut"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewDonut"
+                motion:layout_constraintEnd_toStartOf="@+id/viewDonut"
+                motion:layout_constraintTop_toTopOf="@+id/textViewDonut"/>
 
         <Constraint
-            android:id="@+id/viewDonut"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewDonut"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewDonut" >
+                android:id="@+id/viewDonut"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewDonut"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewDonut">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewEclair"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewEclair"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewDonut" >
+                android:id="@+id/textViewEclair"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewEclair"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewDonut">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewEclair"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewEclair"
-            motion:layout_constraintEnd_toStartOf="@+id/viewEclair"
-            motion:layout_constraintTop_toTopOf="@+id/textViewEclair"/>
+                android:id="@+id/imageViewEclair"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewEclair"
+                motion:layout_constraintEnd_toStartOf="@+id/viewEclair"
+                motion:layout_constraintTop_toTopOf="@+id/textViewEclair"/>
 
         <Constraint
-            android:id="@+id/viewEclair"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewEclair"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewEclair">
+                android:id="@+id/viewEclair"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewEclair"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewEclair">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewFroyo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewFroyo"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewEclair" >
+                android:id="@+id/textViewFroyo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewFroyo"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewEclair">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewFroyo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewFroyo"
-            motion:layout_constraintEnd_toStartOf="@+id/viewFroyo"
-            motion:layout_constraintTop_toTopOf="@+id/textViewFroyo"/>
+                android:id="@+id/imageViewFroyo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewFroyo"
+                motion:layout_constraintEnd_toStartOf="@+id/viewFroyo"
+                motion:layout_constraintTop_toTopOf="@+id/textViewFroyo"/>
 
         <Constraint
-            android:id="@+id/viewFroyo"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewFroyo"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewFroyo" >
+                android:id="@+id/viewFroyo"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewFroyo"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewFroyo">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewGingerbread"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewGingerbread"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewFroyo" >
+                android:id="@+id/textViewGingerbread"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewGingerbread"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewFroyo">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewGingerbread"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewGingerbread"
-            motion:layout_constraintEnd_toStartOf="@+id/viewGingerbread"
-            motion:layout_constraintTop_toTopOf="@+id/textViewGingerbread"/>
+                android:id="@+id/imageViewGingerbread"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewGingerbread"
+                motion:layout_constraintEnd_toStartOf="@+id/viewGingerbread"
+                motion:layout_constraintTop_toTopOf="@+id/textViewGingerbread"/>
 
         <Constraint
-            android:id="@+id/viewGingerbread"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewGingerbread"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewGingerbread" >
+                android:id="@+id/viewGingerbread"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewGingerbread"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewGingerbread">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewHoneycomb"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewHoneycomb"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewGingerbread" >
+                android:id="@+id/textViewHoneycomb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewHoneycomb"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewGingerbread">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewHoneycomb"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewHoneycomb"
-            motion:layout_constraintEnd_toStartOf="@+id/viewHoneycomb"
-            motion:layout_constraintTop_toTopOf="@+id/textViewHoneycomb"/>
+                android:id="@+id/imageViewHoneycomb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewHoneycomb"
+                motion:layout_constraintEnd_toStartOf="@+id/viewHoneycomb"
+                motion:layout_constraintTop_toTopOf="@+id/textViewHoneycomb"/>
 
         <Constraint
-            android:id="@+id/viewHoneycomb"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewHoneycomb"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewHoneycomb" >
+                android:id="@+id/viewHoneycomb"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewHoneycomb"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewHoneycomb">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewIcecreamsandwich"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewIcecreamsandwich"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewHoneycomb">
+                android:id="@+id/textViewIcecreamsandwich"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewIcecreamsandwich"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewHoneycomb">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewIcecreamsandwich"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewIcecreamsandwich"
-            motion:layout_constraintEnd_toStartOf="@+id/viewIcecreamsandwich"
-            motion:layout_constraintTop_toTopOf="@+id/textViewIcecreamsandwich"/>
+                android:id="@+id/imageViewIcecreamsandwich"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewIcecreamsandwich"
+                motion:layout_constraintEnd_toStartOf="@+id/viewIcecreamsandwich"
+                motion:layout_constraintTop_toTopOf="@+id/textViewIcecreamsandwich"/>
 
         <Constraint
-            android:id="@+id/viewIcecreamsandwich"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewIcecreamsandwich"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewIcecreamsandwich" >
+                android:id="@+id/viewIcecreamsandwich"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewIcecreamsandwich"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewIcecreamsandwich">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewJellybean"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewJellybean"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewIcecreamsandwich">
+                android:id="@+id/textViewJellybean"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewJellybean"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewIcecreamsandwich">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewJellybean"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewJellybean"
-            motion:layout_constraintEnd_toStartOf="@+id/viewJellybean"
-            motion:layout_constraintTop_toTopOf="@+id/textViewJellybean" />
+                android:id="@+id/imageViewJellybean"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewJellybean"
+                motion:layout_constraintEnd_toStartOf="@+id/viewJellybean"
+                motion:layout_constraintTop_toTopOf="@+id/textViewJellybean"/>
 
         <Constraint
-            android:id="@+id/viewJellybean"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewJellybean"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewJellybean" >
+                android:id="@+id/viewJellybean"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewJellybean"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewJellybean">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewKitkat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewKitkat"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewJellybean">
+                android:id="@+id/textViewKitkat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewKitkat"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewJellybean">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewKitkat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewKitkat"
-            motion:layout_constraintEnd_toStartOf="@+id/viewKitkat"
-            motion:layout_constraintTop_toTopOf="@+id/textViewKitkat"/>
+                android:id="@+id/imageViewKitkat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewKitkat"
+                motion:layout_constraintEnd_toStartOf="@+id/viewKitkat"
+                motion:layout_constraintTop_toTopOf="@+id/textViewKitkat"/>
 
         <Constraint
-            android:id="@+id/viewKitkat"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewKitkat"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewKitkat" >
+                android:id="@+id/viewKitkat"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewKitkat"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewKitkat">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewLollipop"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewLollipop"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewKitkat">
+                android:id="@+id/textViewLollipop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewLollipop"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewKitkat">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewLollipop"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewLollipop"
-            motion:layout_constraintEnd_toStartOf="@+id/viewLollipop"
-            motion:layout_constraintTop_toTopOf="@+id/textViewLollipop"/>
+                android:id="@+id/imageViewLollipop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewLollipop"
+                motion:layout_constraintEnd_toStartOf="@+id/viewLollipop"
+                motion:layout_constraintTop_toTopOf="@+id/textViewLollipop"/>
 
         <Constraint
-            android:id="@+id/viewLollipop"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewLollipop"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewLollipop" >
+                android:id="@+id/viewLollipop"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewLollipop"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewLollipop">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewMarshmallow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewMarshmallow"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewLollipop">
+                android:id="@+id/textViewMarshmallow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewMarshmallow"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewLollipop">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewMarshmallow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewMarshmallow"
-            motion:layout_constraintEnd_toStartOf="@+id/viewMarshmallow"
-            motion:layout_constraintTop_toTopOf="@+id/textViewMarshmallow"/>
+                android:id="@+id/imageViewMarshmallow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewMarshmallow"
+                motion:layout_constraintEnd_toStartOf="@+id/viewMarshmallow"
+                motion:layout_constraintTop_toTopOf="@+id/textViewMarshmallow"/>
 
         <Constraint
-            android:id="@+id/viewMarshmallow"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewMarshmallow"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewMarshmallow" >
+                android:id="@+id/viewMarshmallow"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewMarshmallow"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewMarshmallow">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewNougat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewNougat"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewMarshmallow">
+                android:id="@+id/textViewNougat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewNougat"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewMarshmallow">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewNougat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewNougat"
-            motion:layout_constraintEnd_toStartOf="@+id/viewNougat"
-            motion:layout_constraintTop_toTopOf="@+id/textViewNougat"/>
+                android:id="@+id/imageViewNougat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewNougat"
+                motion:layout_constraintEnd_toStartOf="@+id/viewNougat"
+                motion:layout_constraintTop_toTopOf="@+id/textViewNougat"/>
 
         <Constraint
-            android:id="@+id/viewNougat"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewNougat"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewNougat" >
+                android:id="@+id/viewNougat"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewNougat"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewNougat">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewOreo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewOreo"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewNougat">
+                android:id="@+id/textViewOreo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewOreo"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewNougat">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewOreo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewOreo"
-            motion:layout_constraintEnd_toStartOf="@+id/viewOreo"
-            motion:layout_constraintTop_toTopOf="@+id/textViewOreo"/>
+                android:id="@+id/imageViewOreo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewOreo"
+                motion:layout_constraintEnd_toStartOf="@+id/viewOreo"
+                motion:layout_constraintTop_toTopOf="@+id/textViewOreo"/>
 
         <Constraint
-            android:id="@+id/viewOreo"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewOreo"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewOreo" >
+                android:id="@+id/viewOreo"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewOreo"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewOreo">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewPie"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewPie"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewOreo">
+                android:id="@+id/textViewPie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewPie"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewOreo">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewPie"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewPie"
-            motion:layout_constraintEnd_toStartOf="@+id/viewPie"
-            motion:layout_constraintTop_toTopOf="@+id/textViewPie"/>
+                android:id="@+id/imageViewPie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewPie"
+                motion:layout_constraintEnd_toStartOf="@+id/viewPie"
+                motion:layout_constraintTop_toTopOf="@+id/textViewPie"/>
 
         <Constraint
-            android:id="@+id/viewPie"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewPie"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewPie" >
+                android:id="@+id/viewPie"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewPie"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewPie">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#FFF"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#FFF"/>
         </Constraint>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@+id/textViewDonut"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewDonut"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
+                android:id="@+id/textViewDonut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewDonut"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/donut"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/donut"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewDonut"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewDonut"
-            motion:layout_constraintEnd_toStartOf="@+id/viewDonut"
-            motion:layout_constraintTop_toTopOf="@+id/textViewDonut"/>
+                android:id="@+id/imageViewDonut"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewDonut"
+                motion:layout_constraintEnd_toStartOf="@+id/viewDonut"
+                motion:layout_constraintTop_toTopOf="@+id/textViewDonut"/>
 
         <Constraint
-            android:id="@+id/viewDonut"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewDonut"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewDonut">
+                android:id="@+id/viewDonut"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewDonut"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewDonut">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/donut"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/donut"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewEclair"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewEclair"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewDonut" >
+                android:id="@+id/textViewEclair"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewEclair"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewDonut">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/eclair"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/eclair"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewEclair"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="-360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewEclair"
-            motion:layout_constraintEnd_toStartOf="@+id/viewEclair"
-            motion:layout_constraintTop_toTopOf="@+id/textViewEclair"/>
+                android:id="@+id/imageViewEclair"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewEclair"
+                motion:layout_constraintEnd_toStartOf="@+id/viewEclair"
+                motion:layout_constraintTop_toTopOf="@+id/textViewEclair"/>
 
         <Constraint
-            android:id="@+id/viewEclair"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewEclair"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewEclair">
+                android:id="@+id/viewEclair"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewEclair"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewEclair">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/eclair"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/eclair"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewFroyo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewFroyo"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewEclair" >
+                android:id="@+id/textViewFroyo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewFroyo"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewEclair">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/froyo"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/froyo"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewFroyo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewFroyo"
-            motion:layout_constraintEnd_toStartOf="@+id/viewFroyo"
-            motion:layout_constraintTop_toTopOf="@+id/textViewFroyo"/>
+                android:id="@+id/imageViewFroyo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewFroyo"
+                motion:layout_constraintEnd_toStartOf="@+id/viewFroyo"
+                motion:layout_constraintTop_toTopOf="@+id/textViewFroyo"/>
 
         <Constraint
-            android:id="@+id/viewFroyo"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewFroyo"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewFroyo" >
+                android:id="@+id/viewFroyo"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewFroyo"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewFroyo">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/froyo"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/froyo"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewGingerbread"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewGingerbread"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewFroyo" >
+                android:id="@+id/textViewGingerbread"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewGingerbread"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewFroyo">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/gingerbread"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/gingerbread"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewGingerbread"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="-360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewGingerbread"
-            motion:layout_constraintEnd_toStartOf="@+id/viewGingerbread"
-            motion:layout_constraintTop_toTopOf="@+id/textViewGingerbread"/>
+                android:id="@+id/imageViewGingerbread"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewGingerbread"
+                motion:layout_constraintEnd_toStartOf="@+id/viewGingerbread"
+                motion:layout_constraintTop_toTopOf="@+id/textViewGingerbread"/>
 
         <Constraint
-            android:id="@+id/viewGingerbread"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewGingerbread"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewGingerbread" >
+                android:id="@+id/viewGingerbread"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewGingerbread"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewGingerbread">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/gingerbread"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/gingerbread"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewHoneycomb"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewHoneycomb"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewGingerbread" >
+                android:id="@+id/textViewHoneycomb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewHoneycomb"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewGingerbread">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/honeycomb"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/honeycomb"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewHoneycomb"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewHoneycomb"
-            motion:layout_constraintEnd_toStartOf="@+id/viewHoneycomb"
-            motion:layout_constraintTop_toTopOf="@+id/textViewHoneycomb"/>`
+                android:id="@+id/imageViewHoneycomb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewHoneycomb"
+                motion:layout_constraintEnd_toStartOf="@+id/viewHoneycomb"
+                motion:layout_constraintTop_toTopOf="@+id/textViewHoneycomb"/>`
 
         <Constraint
-            android:id="@+id/viewHoneycomb"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewHoneycomb"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewHoneycomb" >
+                android:id="@+id/viewHoneycomb"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewHoneycomb"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewHoneycomb">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/honeycomb"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/honeycomb"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewIcecreamsandwich"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewIcecreamsandwich"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewHoneycomb">
+                android:id="@+id/textViewIcecreamsandwich"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewIcecreamsandwich"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewHoneycomb">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/icecreamsandwich"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/icecreamsandwich"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewIcecreamsandwich"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="-360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewIcecreamsandwich"
-            motion:layout_constraintEnd_toStartOf="@+id/viewIcecreamsandwich"
-            motion:layout_constraintTop_toTopOf="@+id/textViewIcecreamsandwich"/>
+                android:id="@+id/imageViewIcecreamsandwich"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewIcecreamsandwich"
+                motion:layout_constraintEnd_toStartOf="@+id/viewIcecreamsandwich"
+                motion:layout_constraintTop_toTopOf="@+id/textViewIcecreamsandwich"/>
 
         <Constraint
-            android:id="@+id/viewIcecreamsandwich"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewIcecreamsandwich"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewIcecreamsandwich" >
+                android:id="@+id/viewIcecreamsandwich"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewIcecreamsandwich"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewIcecreamsandwich">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/icecreamsandwich"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/icecreamsandwich"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewJellybean"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewJellybean"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewIcecreamsandwich">
+                android:id="@+id/textViewJellybean"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewJellybean"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewIcecreamsandwich">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/jellybean"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/jellybean"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewJellybean"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewJellybean"
-            motion:layout_constraintEnd_toStartOf="@+id/viewJellybean"
-            motion:layout_constraintTop_toTopOf="@+id/textViewJellybean" />
+                android:id="@+id/imageViewJellybean"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewJellybean"
+                motion:layout_constraintEnd_toStartOf="@+id/viewJellybean"
+                motion:layout_constraintTop_toTopOf="@+id/textViewJellybean"/>
 
         <Constraint
-            android:id="@+id/viewJellybean"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewJellybean"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewJellybean" >
+                android:id="@+id/viewJellybean"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewJellybean"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewJellybean">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/jellybean"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/jellybean"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewKitkat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewKitkat"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewJellybean">
+                android:id="@+id/textViewKitkat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewKitkat"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewJellybean">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/kitkat"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/kitkat"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewKitkat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="-360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewKitkat"
-            motion:layout_constraintEnd_toStartOf="@+id/viewKitkat"
-            motion:layout_constraintTop_toTopOf="@+id/textViewKitkat"/>
+                android:id="@+id/imageViewKitkat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewKitkat"
+                motion:layout_constraintEnd_toStartOf="@+id/viewKitkat"
+                motion:layout_constraintTop_toTopOf="@+id/textViewKitkat"/>
 
         <Constraint
-            android:id="@+id/viewKitkat"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewKitkat"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewKitkat" >
+                android:id="@+id/viewKitkat"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewKitkat"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewKitkat">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/kitkat"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/kitkat"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewLollipop"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewLollipop"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewKitkat">
+                android:id="@+id/textViewLollipop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewLollipop"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewKitkat">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/lollipop"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/lollipop"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewLollipop"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewLollipop"
-            motion:layout_constraintEnd_toStartOf="@+id/viewLollipop"
-            motion:layout_constraintTop_toTopOf="@+id/textViewLollipop"/>
+                android:id="@+id/imageViewLollipop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewLollipop"
+                motion:layout_constraintEnd_toStartOf="@+id/viewLollipop"
+                motion:layout_constraintTop_toTopOf="@+id/textViewLollipop"/>
 
         <Constraint
-            android:id="@+id/viewLollipop"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewLollipop"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewLollipop" >
+                android:id="@+id/viewLollipop"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewLollipop"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewLollipop">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/lollipop"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/lollipop"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewMarshmallow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewMarshmallow"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewLollipop">
+                android:id="@+id/textViewMarshmallow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewMarshmallow"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewLollipop">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/marshmallow"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/marshmallow"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewMarshmallow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="-360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewMarshmallow"
-            motion:layout_constraintEnd_toStartOf="@+id/viewMarshmallow"
-            motion:layout_constraintTop_toTopOf="@+id/textViewMarshmallow"/>
+                android:id="@+id/imageViewMarshmallow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewMarshmallow"
+                motion:layout_constraintEnd_toStartOf="@+id/viewMarshmallow"
+                motion:layout_constraintTop_toTopOf="@+id/textViewMarshmallow"/>
 
         <Constraint
-            android:id="@+id/viewMarshmallow"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewMarshmallow"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewMarshmallow" >
+                android:id="@+id/viewMarshmallow"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewMarshmallow"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewMarshmallow">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/marshmallow"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/marshmallow"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewNougat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewNougat"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewMarshmallow">
+                android:id="@+id/textViewNougat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewNougat"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewMarshmallow">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/honeycomb"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/honeycomb"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewNougat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewNougat"
-            motion:layout_constraintEnd_toStartOf="@+id/viewNougat"
-            motion:layout_constraintTop_toTopOf="@+id/textViewNougat"/>
+                android:id="@+id/imageViewNougat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewNougat"
+                motion:layout_constraintEnd_toStartOf="@+id/viewNougat"
+                motion:layout_constraintTop_toTopOf="@+id/textViewNougat"/>
 
         <Constraint
-            android:id="@+id/viewNougat"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewNougat"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewNougat" >
+                android:id="@+id/viewNougat"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewNougat"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewNougat">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/honeycomb"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/honeycomb"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewOreo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewOreo"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewNougat">
+                android:id="@+id/textViewOreo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewOreo"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewNougat">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewOreo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="-360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewOreo"
-            motion:layout_constraintEnd_toStartOf="@+id/viewOreo"
-            motion:layout_constraintTop_toTopOf="@+id/textViewOreo"/>
+                android:id="@+id/imageViewOreo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewOreo"
+                motion:layout_constraintEnd_toStartOf="@+id/viewOreo"
+                motion:layout_constraintTop_toTopOf="@+id/textViewOreo"/>
 
         <Constraint
-            android:id="@+id/viewOreo"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewOreo"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewOreo" >
+                android:id="@+id/viewOreo"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewOreo"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewOreo">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#000"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#000"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/textViewPie"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintEnd_toStartOf="@+id/imageViewPie"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/textViewOreo">
+                android:id="@+id/textViewPie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                motion:layout_constraintEnd_toStartOf="@+id/imageViewPie"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/textViewOreo">
             <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="@color/kitkat"/>
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/kitkat"/>
         </Constraint>
 
         <Constraint
-            android:id="@+id/imageViewPie"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:rotation="360"
-            motion:layout_constraintBottom_toBottomOf="@+id/textViewPie"
-            motion:layout_constraintEnd_toStartOf="@+id/viewPie"
-            motion:layout_constraintTop_toTopOf="@+id/textViewPie"/>
+                android:id="@+id/imageViewPie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="360"
+                motion:layout_constraintBottom_toBottomOf="@+id/textViewPie"
+                motion:layout_constraintEnd_toStartOf="@+id/viewPie"
+                motion:layout_constraintTop_toTopOf="@+id/textViewPie"/>
 
         <Constraint
-            android:id="@+id/viewPie"
-            android:layout_width="10dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/imageViewPie"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/imageViewPie" >
+                android:id="@+id/viewPie"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                motion:layout_constraintBottom_toBottomOf="@+id/imageViewPie"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="@+id/imageViewPie">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/kitkat"/>
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/kitkat"/>
         </Constraint>
     </ConstraintSet>
 </MotionScene>

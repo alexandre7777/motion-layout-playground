@@ -19,7 +19,7 @@ class DetailAndroidActivity : AppCompatActivity() {
 
         setContentView(layout)
 
-        when(layout) {
+        when (layout) {
             R.layout.activity_nougat -> {
                 val motionLayout = findViewById<MotionLayout>(R.id.motionLayout)
 
@@ -43,7 +43,12 @@ class DetailAndroidActivity : AppCompatActivity() {
                             Toast.makeText(baseContext, "Start", Toast.LENGTH_SHORT).show()
                         }
 
-                        override fun onTransitionChange(motionLayout: MotionLayout?, startId: Int, endId: Int, progress: Float) {
+                        override fun onTransitionChange(
+                            motionLayout: MotionLayout?,
+                            startId: Int,
+                            endId: Int,
+                            progress: Float
+                        ) {
                             seekBar.progress = (progress * 100).toInt()
                         }
 
@@ -51,7 +56,13 @@ class DetailAndroidActivity : AppCompatActivity() {
                             Toast.makeText(baseContext, "Completed", Toast.LENGTH_SHORT).show()
                         }
 
-                        override fun onTransitionTrigger(motionLayout: MotionLayout?, triggerId: Int, positive: Boolean, progress: Float) {}
+                        override fun onTransitionTrigger(
+                            motionLayout: MotionLayout?,
+                            triggerId: Int,
+                            positive: Boolean,
+                            progress: Float
+                        ) {
+                        }
                     })
             }
         }
