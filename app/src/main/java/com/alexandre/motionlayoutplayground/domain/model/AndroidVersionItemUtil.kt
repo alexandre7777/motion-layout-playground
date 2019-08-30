@@ -44,6 +44,8 @@ fun createAndroidVersionList(): List<AndroidVersionItem> {
     val oreo = AndroidVersionItem(10, "8.0", R.drawable.oreo, "Oreo", R.layout.activity_oreo)
     val pie = AndroidVersionItem(10, "9.0", R.drawable.pie, "Pie", R.layout.activity_pie)
 
+    val ten = AndroidVersionItem(13, "10.0", R.drawable.ten, "10", R.layout.activity_ten)
+
     return listOf(
         donut,
         eclair,
@@ -57,6 +59,7 @@ fun createAndroidVersionList(): List<AndroidVersionItem> {
         marshmallow,
         nougat,
         oreo,
-        pie
+        pie,
+        ten
     )
 }

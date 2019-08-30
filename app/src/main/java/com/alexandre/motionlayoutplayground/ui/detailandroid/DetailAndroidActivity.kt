@@ -1,15 +1,17 @@
 package com.alexandre.motionlayoutplayground.ui.detailandroid
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
-import androidx.constraintlayout.motion.widget.MotionScene
 import androidx.viewpager.widget.ViewPager
 import com.alexandre.motionlayoutplayground.R
+import com.alexandre.motionlayoutplayground.ui.androidversionlist.AndroidVersionListActivity
 import com.alexandre.motionlayoutplayground.ui.detailandroid.adapter.ViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_nougat.*
 import kotlinx.android.synthetic.main.activity_pie.*
+import kotlinx.android.synthetic.main.activity_ten.*
 
 class DetailAndroidActivity : AppCompatActivity() {
 
@@ -64,6 +66,23 @@ class DetailAndroidActivity : AppCompatActivity() {
                         ) {
                         }
                     })
+            }
+            R.layout.activity_ten -> {
+                sin.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten1)
+                    startActivity(intent)
+                }
+                bounce.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten2)
+                    startActivity(intent)
+                }
+                triangle.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten3)
+                    startActivity(intent)
+                }
             }
         }
     }

@@ -106,4 +106,7 @@
     </string>
     <string name="droid">droid</string>
     <string name="page">Page</string>
+    <string name="sin">sin</string>
+    <string name="bounce">bounce</string>
+    <string name="triangle">triangle</string>
 </resources>
