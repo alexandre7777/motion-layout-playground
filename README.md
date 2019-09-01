@@ -58,3 +58,19 @@ Connecting with a drawer
 Connecting with a seekbar
 
 <img width="200" alt="pie motion layout" src="raw/pie-motion-layout.gif"/>
+
+KeyCycle 1
+
+<img width="200" alt="pie motion layout" src="raw/keycycle1.gif"/>
+
+KeyCycle 2
+
+<img width="200" alt="pie motion layout" src="raw/keycycle2.gif"/>
+
+KeyCycle 3
+
+<img width="200" alt="pie motion layout" src="raw/keycycle3.gif"/>
+
+KeyCycle 4
+
+<img width="200" alt="pie motion layout" src="raw/keycycle4.gif"/>
