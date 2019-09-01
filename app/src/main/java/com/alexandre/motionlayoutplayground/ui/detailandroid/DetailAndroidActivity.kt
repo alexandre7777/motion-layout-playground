@@ -83,6 +83,11 @@ class DetailAndroidActivity : AppCompatActivity() {
                     intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten3)
                     startActivity(intent)
                 }
+                coordinator.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten4)
+                    startActivity(intent)
+                }
             }
         }
     }

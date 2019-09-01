@@ -109,4 +109,5 @@
     <string name="sin">sin</string>
     <string name="bounce">bounce</string>
     <string name="triangle">triangle</string>
+    <string name="coordinator">Coordinator</string>
 </resources>
