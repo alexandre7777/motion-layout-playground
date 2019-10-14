@@ -73,6 +73,21 @@ class DetailAndroidActivity : AppCompatActivity() {
                     intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten1)
                     startActivity(intent)
                 }
+                sinb.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten1b)
+                    startActivity(intent)
+                }
+                sinc.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten1c)
+                    startActivity(intent)
+                }
+                sind.setOnClickListener {
+                    val intent = Intent(this, DetailAndroidActivity::class.java)
+                    intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten1d)
+                    startActivity(intent)
+                }
                 bounce.setOnClickListener {
                     val intent = Intent(this, DetailAndroidActivity::class.java)
                     intent.putExtra(AndroidVersionListActivity.KEY_RES_ID, R.layout.activity_ten2)

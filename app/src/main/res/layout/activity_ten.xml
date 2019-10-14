@@ -20,6 +20,42 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+            android:id="@+id/sinb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/sinb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sin"/>
+
+    <Button
+            android:id="@+id/sinc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/sinc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sinb"/>
+
+    <Button
+            android:id="@+id/sind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/sind"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sinc"/>
+
+    <Button
             android:id="@+id/bounce"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +65,7 @@
             android:text="@string/bounce"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sin" />
+            app:layout_constraintTop_toBottomOf="@+id/sind" />
 
     <Button
             android:id="@+id/triangle"
