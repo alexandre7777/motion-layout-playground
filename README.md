@@ -63,6 +63,18 @@ KeyCycle 1
 
 <img width="200" alt="pie motion layout" src="raw/keycycle1.gif"/>
 
+KeyCycle 1b
+
+<img width="200" alt="pie motion layout" src="raw/keycycle1b.gif"/>
+
+KeyCycle 1c
+
+<img width="200" alt="pie motion layout" src="raw/keycycle1c.gif"/>
+
+KeyCycle 1d
+
+<img width="200" alt="pie motion layout" src="raw/keycycle1d.gif"/>
+
 KeyCycle 2
 
 <img width="200" alt="pie motion layout" src="raw/keycycle2.gif"/>
