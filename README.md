@@ -86,3 +86,7 @@ KeyCycle 3
 KeyCycle 4
 
 <img width="200" alt="pie motion layout" src="raw/keycycle4.gif"/>
+
+Fragment
+
+<img width="200" alt="fragment motion layout" src="raw/fragment-motion-layout.gif"/>

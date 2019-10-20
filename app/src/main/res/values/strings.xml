@@ -113,4 +113,7 @@
     <string name="bounce">bounce</string>
     <string name="triangle">triangle</string>
     <string name="coordinator">Coordinator</string>
+
+    <string name="main_fragment">Main Fragment</string>
+    <string name="detail_fragment">Detail Fragment</string>
 </resources>
