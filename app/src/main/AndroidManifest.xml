@@ -20,6 +20,7 @@
         <activity
                 android:name=".ui.detailandroid.FragmentExampleActivity"
                 android:screenOrientation="portrait" />
+        <activity android:name=".ui.detailandroid.ButtonExampleActivity" />
     </application>
 
 </manifest>
