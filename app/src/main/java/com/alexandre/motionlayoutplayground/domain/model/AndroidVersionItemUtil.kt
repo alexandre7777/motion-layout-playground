@@ -48,6 +48,8 @@ fun createAndroidVersionList(): List<AndroidVersionItem> {
 
     val fragment = AndroidVersionItem(14, "11.0", R.drawable.ten, "Fragment", R.layout.activity_ten)
 
+    val btn = AndroidVersionItem(15, "11.0", R.drawable.ten, "Button", R.layout.activity_ten)
+
     return listOf(
         donut,
         eclair,
@@ -63,6 +65,7 @@ fun createAndroidVersionList(): List<AndroidVersionItem> {
         oreo,
         pie,
         ten,
-        fragment
+        fragment,
+        btn
     )
 }

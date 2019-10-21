@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.alexandre.motionlayoutplayground.R
 import com.alexandre.motionlayoutplayground.domain.model.AndroidVersionItem
 import com.alexandre.motionlayoutplayground.domain.model.createAndroidVersionList
+import com.alexandre.motionlayoutplayground.ui.detailandroid.ButtonExampleActivity
 import com.alexandre.motionlayoutplayground.ui.detailandroid.DetailAndroidActivity
 import com.alexandre.motionlayoutplayground.ui.detailandroid.FragmentExampleActivity
 import kotlinx.android.synthetic.main.activity_android_version_list.*
@@ -16,6 +17,7 @@ class AndroidVersionListActivity : AppCompatActivity() {
     private var adapter = AndroidVersionListAdapter { _, androidVersionItem: AndroidVersionItem ->
         when (androidVersionItem.id) {
             14 -> startActivity(Intent(this, FragmentExampleActivity::class.java))
+            15 -> startActivity(Intent(this, ButtonExampleActivity::class.java))
             else -> {
                 val intent = Intent(this, DetailAndroidActivity::class.java)
                 intent.putExtra(KEY_RES_ID, androidVersionItem.res)

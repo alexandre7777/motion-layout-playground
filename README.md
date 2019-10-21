@@ -90,3 +90,7 @@ KeyCycle 4
 Fragment
 
 <img width="200" alt="fragment motion layout" src="raw/fragment-motion-layout.gif"/>
+
+Button
+
+<img width="200" alt="fragment motion layout" src="raw/button-motion-layout.gif"/>
