@@ -1253,6 +1253,236 @@ object : MotionLayout.TransitionListener {
 
 ---
 
+# Fragments
+
+---
+
+```xml
+<androidx.constraintlayout.motion.widget.MotionLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutDescription="@xml/scene_example_fragment"
+        app:showPaths="true"
+        tools:context=".ui.detailandroid.FragmentExampleActivity">
+
+    <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+```
+
+![70%, right](raw/fragment-motion-layout.gif)
+
+---
+
+```xml
+<MotionScene>
+    <Transition
+            motion:constraintSetEnd="@+id/end"
+            motion:constraintSetStart="@+id/start">
+        <KeyFrameSet>
+            <KeyAttribute
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/container" />
+        </KeyFrameSet>
+    </Transition>
+
+    <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@+id/container"
+            motion:touchAnchorSide="top" />
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@+id/container"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:rotation="-360"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent">
+            <CustomAttribute
+                    motion:attributeName="BackgroundColor"
+                    motion:customColorValue="@color/colorPrimary" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+                android:id="@id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    motion:attributeName="BackgroundColor"
+                    motion:customColorValue="@color/colorAccent" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>
+```
+
+![70%, right](raw/fragment-motion-layout.gif)
+
+---
+
+```kotlin
+class FragmentExampleActivity : AppCompatActivity(), MotionLayout.TransitionListener {
+
+    private var lastProgress = 0f
+    private var fragment: Fragment? = null
+
+    override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, progress: Float) {
+    }
+
+    override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
+    }
+
+    override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, progress: Float) {
+        if (progress - lastProgress > 0) {
+            // from start to end
+            val atEnd = Math.abs(progress - 1f) < 0.1f
+            if (atEnd && fragment is MainFragment) {
+                val transaction = supportFragmentManager.beginTransaction()
+
+                fragment = DetailFragment().also {
+                    transaction
+                        .replace(R.id.container, it)
+                        .commitNow()
+                }
+            }
+        } else {
+            // from end to start
+            val atStart = progress < 0.9f
+            if (atStart && fragment is DetailFragment) {
+                val transaction = supportFragmentManager.beginTransaction()
+
+                fragment = MainFragment().also {
+                    transaction
+                        .replace(R.id.container, it)
+                        .commitNow()
+                }
+            }
+        }
+        lastProgress = progress
+    }
+
+    override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
+    }
+    //...
+}
+```
+
+![70%, right](raw/fragment-motion-layout.gif)
+
+---
+
+```kotlin
+class FragmentExampleActivity : AppCompatActivity(), MotionLayout.TransitionListener {
+
+    //...
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_example_fragment)
+        if (savedInstanceState == null) {
+            fragment = MainFragment().also {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.container, it)
+                    .commitNow()
+            }
+        }
+        motionLayout.setTransitionListener(this)
+    }
+}
+```
+
+![70%, right](raw/fragment-motion-layout.gif)
+
+---
+
+# Click
+
+---
+
+[.code-highlight: 7, 8]
+```xml
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            motion:constraintSetEnd="@id/end"
+            motion:constraintSetStart="@id/start"
+            motion:duration="1000"
+            motion:motionInterpolator="bounce"/>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint/>
+    </ConstraintSet>
+</MotionScene>
+```
+
+![70%, right](raw/button-motion-layout.gif)
+
+---
+
+### motionInterpolator
+
+- bounce
+- easeInOut
+- easeIn
+- anticipate
+- easeOut
+- linear
+
+---
+
+
+```kotlin
+class ButtonExampleActivity : AppCompatActivity() {
+
+    private var start: Boolean = true
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_btn)
+
+        android_img.setOnClickListener {
+            if (start) {
+                motion.transitionToEnd()
+                start = false
+            } else {
+                motion.transitionToStart()
+                start = true
+            }
+        }
+    }
+}
+```
+
+![70%, right](raw/button-motion-layout.gif)
+
+---
+
+
 # Limitations
 
 ---

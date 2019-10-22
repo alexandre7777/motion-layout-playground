@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+<MotionScene
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:motion="http://schemas.android.com/apk/res-auto"
         android:id="@+id/motionLayout">
 
@@ -51,5 +52,4 @@
                     motion:customColorValue="@color/colorAccent" />
         </Constraint>
     </ConstraintSet>
-
 </MotionScene>
